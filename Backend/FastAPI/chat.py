@@ -1,4 +1,5 @@
 import openai
+
 #DIRECCION DE OPENAI QUE TE DA ACCESO AL MODELO POR AUTENTICACION
 openai.api_key = #insertar aqui entre comillas
 chatHistory = []
@@ -12,15 +13,15 @@ def procesarPregunta():
     maxTokens=100 #Cantidad maxima de tokens por solicitud    
                                                                         
     )
-        chat_history.append({"role": "user", "content": prompt})
+    chat_history.append({"role": "user", "content": prompt})
 def Mostrarenpantalla:
     for parte in response:
-            parte_message = parte['choices'][0]['delta']  # extraear parte del mensaje que intersa dentro del onjeto que se recibe
-            collected_messages.append(parte_message)  #juntar las partes para luego imprimir
-            full_reply_content = ''.join([m.get('content', '') for m in collected_messages])
-            print(full_reply_content)
+        parte_message = parte['choices'][0]['delta']  # extraear parte del mensaje que intersa dentro del onjeto que se recibe
+        collected_messages.append(parte_message)  #juntar las partes para luego imprimir
+        full_reply_content = ''.join([m.get('content', '') for m in collected_messages])
+        print(full_reply_content)
     # limpiar terminal
-            print("\033[H\033[J", end="")
+        print("\033[H\033[J", end="")
             
     chat_history.append({"role": "assistant", "content": full_reply_content}) #Agregar mensaje del asistente al historial
         # imprimir todo lo recibido hasta el momento

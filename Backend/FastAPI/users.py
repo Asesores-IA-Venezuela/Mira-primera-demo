@@ -1,13 +1,18 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
 app = FastAPI()
 
-class User():
+class User(BaseModel):
     name: str
     lastname: str
-    email: str
+    url: str
     age: int
 
-usersDB = [user()]
-@app.get("/usersjson")
-async def usersJson():
-    return "Hello users!!"
+usersDB = [User("Moises", "Ochoa", "moisesochoa_20@hotmail.com", 22),
+           User("Samuel", "Sanchez", "smuel45454@gamil.com,", 25)]
+
+
+@app.get("/users")
+async def get_users():
+    return usersDB
+
