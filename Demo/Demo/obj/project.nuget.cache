@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NPnm5DStd++eRzhtqh9rgGLOPbKQaeOsxGznHWWO0wwWeFQPPMPfYi6GPAiuv1WIhiM5/v+Yf9lg0NPjLH06/Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\samue\\OneDrive\\Documentos\\Proyec\\Asesores\\Mira-primera-demo\\Demo\\Demo\\Demo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\7.0.13\\microsoft.aspnetcore.spaproxy.7.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

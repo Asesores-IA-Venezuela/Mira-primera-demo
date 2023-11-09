@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44431",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\samue\\OneDrive\\Documentos\\Proyec\\Asesores\\Mira-primera-demo\\Demo\\Demo\\ClientApp\\",
+"MaxTimeoutInSeconds": "120"
+}
+}
